@@ -5,6 +5,6 @@
 3. [字串處理與函式](https://cflin.com/course/python/Python_03.pdf)
 4. [函數](https://cflin.com/course/python/Python_04.pdf)
 5. [類別](https://cflin.com/course/python/Python_05.pdf)
-6. [例外處理、輸入輸出](https://cflin.com/course/python/Python_06.pdf)     作業練習用檔案([stores_old.csv](https://cflin.com/course/python/stores_old.csv˚v))
+6. [例外處理、輸入輸出](https://cflin.com/course/python/Python_06.pdf)     作業練習用檔案([stores_old.csv](https://cflin.com/course/python/stores_old.csv))
 7. [系統模組與第三方模組](https://cflin.com/course/python/Python_07.pdf)
 8. [網頁抓取分析](https://cflin.com/course/python/Python_08.pdf)
