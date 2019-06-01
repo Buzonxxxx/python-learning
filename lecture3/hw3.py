@@ -1,4 +1,4 @@
-#-*-coding:UTF-8 -*-
+# -*-coding:UTF-8 -*-
 # 字串作業練習 EX03_hw.py
 #
 # 條件1: 若有符合的字串，將其索引值印出 (全部印出， 並非印出第一個符合的索引值)
@@ -27,3 +27,11 @@ Apple Watch 的銷售均價為 499 美元，據此估算 Apple Watch 在 2015 �
 也就是說 Apple Watch 已經開始有庫存，對於一款上市 3 個月的新品而言，這不是一個好消息。'''
 
 find_str = input('請輸入要找的字:')
+
+startIndex = 0
+while text.find(find_str, startIndex) != -1:
+    findIndex = text.find(find_str, startIndex)
+    print("符合的索引值為: %d" % (findIndex))
+    startIndex = findIndex + 1
+    
+print("總共有 %d 個'的'" %(text.count(find_str)))
