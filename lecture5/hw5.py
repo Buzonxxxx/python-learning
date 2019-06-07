@@ -22,43 +22,50 @@ class Student:
       self.grades = []
   
   def avg(self):
-    avg = sum(self.grades) / len(self.grades)
-    return avg
+    self.avg = sum(self.grades) / len(self.grades)
+    return self.avg
 
   def add(self, grade):
-    self.grades.append(grade)  
+    self.grades.append(grade)
 
   def fcount(self):
-    self.failGrades = []
+    failGrades = 0
     for i in self.grades:
       if i < 60:
-        failGrades.append(i)
-    return len(failGrades)
+        failGrades = failGrades + 1
+    self.failGrades = failGrades
+    return failGrades 
 
+def top(inputSeq):
+  avgSeq = []
+  for student in inputSeq:
+    avgSeq.append(student.avg)
+  maxAvgIndex = avgSeq.index(max(avgSeq))
+  return inputSeq[maxAvgIndex].name
 
-a = Student("Louis", "M")
-a.add(10)
-print(a.grades)  
-print(a.avg())  
-print(a.fcount)
+s1 = Student("Tom","M")
+s2 = Student("Jane","F")
+s3 = Student("John","M")
+s4 = Student("Ann","F")
+s5 = Student("Peter","M")
+s1.add(80)
+s1.add(90)
+s1.add(55)
+s1.add(77)
+s1.add(40)
+s2.add(58)
+s2.add(87)
+s3.add(100)
+s3.add(80)
+s4.add(40)
+s4.add(55)
+s5.add(60)
+s5.add(60)
 
+class_seq = [s1,s2,s3,s4,s5]
+for student in class_seq:
+    print(student.name + "平均分數:" + str(student.avg()))
+    print(student.name + "不及格的數目:" + str(student.fcount()))
+print("平均分數最高的是:" + top(class_seq))
 
-# s1 = student("Tom","M")
-# s2 = student("Jane","F")
-# s3 = student("John","M")
-# s4 = student("Ann","F")
-# s5 = student("Peter","M")
-# s1.add(80)
-# s1.add(90)
-# s1.add(55)
-# s1.add(77)
-# s1.add(40)
-# s2.add(58)
-# s2.add(87)
-# s3.add(100)
-# s3.add(80)
-# s4.add(40)
-# s4.add(55)
-# s5.add(60)
-# s5.add(60)
 
