@@ -8,3 +8,10 @@
 6. [例外處理、輸入輸出](https://cflin.com/course/python/Python_06.pdf)     作業練習用檔案([stores_old.csv](https://cflin.com/course/python/stores_old.csv))
 7. [系統模組與第三方模組](https://cflin.com/course/python/Python_07.pdf)
 8. [網頁抓取分析](https://cflin.com/course/python/Python_08.pdf)
+
+
+### Python Cheat Sheet
+- https://zerotomastery.io/cheatsheets/python-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent
+
+### Udemy course
+- https://github.com/saurabh618/All-Python-codes-of-ZTM-course-by-Andrei-Neagoie

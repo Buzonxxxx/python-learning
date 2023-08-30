@@ -15,18 +15,17 @@ zipcode = {
 
 # Q1
 for code in zipcode["台北市"]:
-  print(code, zipcode["台北市"][code])
+    print(code, zipcode["台北市"][code])
 
 # Q2
 n = input("請輸入區域名稱:\n")
 for city in zipcode:
-  if zipcode[city].get(n) != None:
-    print(city, n, zipcode[city].get(n))
+    if zipcode[city].get(n) != None:
+        print(city, n, zipcode[city].get(n))
 
 # Q3
 n = int(input("請輸入郵遞區號:\n"))
 for city in zipcode:
-  for area in zipcode[city]:
-    if zipcode[city][area] == n:
-      print(area)
-
+    for area in zipcode[city]:
+        if zipcode[city][area] == n:
+            print(area)

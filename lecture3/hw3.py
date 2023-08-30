@@ -33,5 +33,5 @@ while text.find(find_str, startIndex) != -1:
     findIndex = text.find(find_str, startIndex)
     print("符合的索引值為: %d" % (findIndex))
     startIndex = findIndex + 1
-    
-print("總共有 %d 個'的'" %(text.count(find_str)))
+
+print("總共有 %d 個'的'" % (text.count(find_str)))

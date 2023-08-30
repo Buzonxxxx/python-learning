@@ -9,8 +9,8 @@ i = 0
 j = 0
 
 for i in range(1, n + 1):
-  for j in range(1, n + 1):
-    print(i, "*", j, "=", i * j)
+    for j in range(1, n + 1):
+        print(i, "*", j, "=", i * j)
 
 # while
 n = int(input("請輸入大於1的整數:"))
@@ -18,8 +18,8 @@ i = 1
 j = 1
 
 while i < n+1:
-  while j < n+1:
-    print(i, "*", j, "=", i * j)
-    j += 1
-  i += 1
-  j = 1
+    while j < n+1:
+        print(i, "*", j, "=", i * j)
+        j += 1
+    i += 1
+    j = 1
