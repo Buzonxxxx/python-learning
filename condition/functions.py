@@ -46,7 +46,16 @@ while (n := len(a)) > 1:
 print(a)
 
 # scope
+total = 0
 
+def count():
+    global total
+    total += 1
+    return total
+
+count()
+count()
+print(count())
 
 
 
