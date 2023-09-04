@@ -65,6 +65,7 @@ print(basket5) # ['c', 'b', 'a']
 print(basket5[::-1]) # ['a', 'b', 'c']
 print(basket5) # ['c', 'b', 'a']
 
+# create list with ele from 1 to 100
 print(list(range(1,101)))
 
 # list unpacking

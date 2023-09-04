@@ -5,4 +5,4 @@ print(bool(1)) # True
 print(bool('a')) # True
 
 weapons = None
-print(weapons)
+print(weapons) # None

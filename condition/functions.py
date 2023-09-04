@@ -24,7 +24,7 @@ def super_func(name, *args, i='hi', **kwargs):
     for items in kwargs.values():
         total += items
     return sum(args) + total
-print(super_func('Louis', 1,2,3,4,5, num1=5, num2=10))
+print(super_func('Louis', 1,2,3,4,5, num1=5, num2=10)) # 30
 
 # exercise
 def highest_even(li):
@@ -33,12 +33,13 @@ def highest_even(li):
         if num % 2 == 0:
             evens.append(num)
     return max(evens)
-print(highest_even([10,2,3,4,8,11]))
+print(highest_even([10,2,3,4,8,11])) # 10
 
 # walrus operator
 a = 'helloooooooooo'
+# n = len(a)
 if (n := len(a)) > 10:
-    print(f'too long {n} elements')
+    print(f'too long {n} elements') # too long 14 elements
 
 while (n := len(a)) > 1:
     print(n)
@@ -55,7 +56,7 @@ def count():
 
 count()
 count()
-print(count())
+print(count()) # 3
 
 
 

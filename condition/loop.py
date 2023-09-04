@@ -24,16 +24,16 @@ for key, value in user.items():
 
 
 # range()
-for _ in range(0, 10, 2):
+for _ in range(0, 10, 2): # 0 2 4 6 8
     print(_)
 
-for _ in range(10, 0, -1):
+for _ in range(10, 0, -1): # 10...1
     print(_)
 
-for _ in range(10):
+for _ in range(10): # 0...9
     print(_)
 
-print(list(range(10)))
+print(list(range(10))) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # enumerate: useful to get index counter
 for i, char in enumerate(list(range(100))):
@@ -73,6 +73,7 @@ def show_tree():
     for row in picture:
         for pixel in row:
             if pixel:
+                # end: string appended after the last value, default a newline.
                 print(fill, end='')
             else:
                 print(empty, end='')

@@ -36,8 +36,13 @@ print(quote.capitalize())
 print(quote.find('BE')) # 3
 print(quote.replace('BE', 'be'))
 
-sentence = 'hi my name is louis'
-new_sentence = sentence.split()
+sentence = 'himynameislouis'
+print(list(sentence)) #['h', 'i', 'm', 'y', 'n', 'a', 'm', 'e', 'i', 's', 'l', 'o', 'u', 'i', 's']
+
+# default separator is any whitespace.
+sentence2 = 'hi my name is louis'
+
+new_sentence = sentence2.split()
 print(new_sentence) # ['hi', 'my', 'name', 'is', 'louis']
 joined_sentence = ''.join(new_sentence)
 print(joined_sentence) # himynameislouis

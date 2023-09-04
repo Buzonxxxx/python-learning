@@ -48,37 +48,37 @@ jsonData = {
 # // verify if recency <= 12
 # // verify if date < 6
 def isValidJson(jsonData):
-  isValid = True
+  is_valid = True
   keyword = jsonData["keywords"]
-  keywordFrequency = jsonData["keywords frequency"]
-  keywordRecency = jsonData["keywords recency"]
-  keywordRecencyDate = jsonData["Keyword Recency Date"]
+  keyword_frequency = jsonData["keywords frequency"]
+  keyword_recency = jsonData["keywords recency"]
+  keyword_recencyDate = jsonData["Keyword Recency Date"]
   now_date = datetime.date(2021, 2, 6)  # mm-dd-yyyy
 
   for key in keyword:
-    frequency = keywordFrequency.get(key, None)
-    recency = keywordRecency.get(key, None)
-    recencyDate = keywordRecencyDate.get(key, None)
+    frequency = keyword_frequency.get(key, None)
+    recency = keyword_recency.get(key, None)
+    recencyDate = keyword_recencyDate.get(key, None)
 
     if (frequency is None or frequency < 0):
        print(f'The {key}\'s frequency: {frequency} is invalid')
-       isValid = False
+       is_valid = False
 
     if (recency is None or recency > 12):
       print(f'The {key}\'s recency: {recency} is invalid')
-      isValid = False
+      is_valid = False
 
     if (recencyDate is not None):
         date = datetime.datetime.strptime(recencyDate, "%Y-%m-%d").date()
         diff = (now_date - date).days
         if (diff > 6):
             print(f'The {key}\'s recency date: {recency} is invalid')
-            isValid = False
+            is_valid = False
     
     if (recencyDate is None):
        print(f'The {key}\'s recency date: {recency} is invalid')
-       isValid = False
+       is_valid = False
 
-  return isValid
+  return is_valid
 
 print(isValidJson(jsonData))

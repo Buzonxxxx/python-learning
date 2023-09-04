@@ -1,5 +1,11 @@
 # Dictionary
 
+"""
+- keys
+- values
+- items
+"""
+
 user = {
     'basket': [1,2,3],
     'greet': 'hello'
