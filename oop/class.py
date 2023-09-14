@@ -15,6 +15,7 @@ class PlayerCharacter:
     def adding_things(cls, num1, num2):
         return cls('Teddy', num1 + num2)
     
+    # static method 不用init class
     @staticmethod
     def adding_things2(num1, num2):
         return num1 + num2

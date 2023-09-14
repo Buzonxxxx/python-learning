@@ -68,6 +68,10 @@ print(basket5) # ['c', 'b', 'a']
 # create list with ele from 1 to 100
 print(list(range(1,101)))
 
+# create list with 100 'nemo'
+large = ['nemo' for i in range(100)]
+print(large)
+
 # list unpacking
 a, b, c, *other, d = [1,2,3,4,5,6,7]
 print(a) # 1
