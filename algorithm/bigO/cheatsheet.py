@@ -1,7 +1,7 @@
 """
 #Big O Cheat Sheet: 
 
--Big Os-
+- Big Os -
 O(1) Constant- no loops
 O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search) 
 O(n) Linear- for loops, while loops through n items
@@ -11,12 +11,13 @@ O(2^n) Exponential- recursive algorithms that solves a problem of size N
 O(n!) Factorial- you are adding a loop for every element
 Iterating through half a collection is still O(n) Two separate collections: O(a * b)
 
--What can cause time in a function?-
-Operations (+, -, *, /) Comparisons (<, >, ==)
+- What can cause time in a function? -
+Operations (+, -, *, /) 
+Comparisons (<, >, ==)
 Looping (for, while)
 Outside Function call (function())
 
--Rule Book-
+- Rule Book -
 Rule 1: Always worst Case
 Rule 2: Remove Constants
 Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b)
@@ -24,9 +25,10 @@ Rule 3: Different inputs should have different variables. O(a+b). A and B arrays
         * for nested steps
 Rule 4: Drop Non-dominant terms
 
--What causes Space complexity?-
+- What causes Space complexity? -
 Variables
-Data Structures Function Call Allocations
-
+Data Structures 
+Function Call 
+Allocations
 """
 

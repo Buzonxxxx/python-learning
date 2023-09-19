@@ -70,7 +70,9 @@ print(list(range(1,101)))
 
 # create list with 100 'nemo'
 large = ['nemo' for i in range(100)]
+large2 = ['nemo'] * 100
 print(large)
+print(large2)
 
 # list unpacking
 a, b, c, *other, d = [1,2,3,4,5,6,7]
