@@ -20,6 +20,7 @@ print(number[0:8:2]) # '0246'
 print(number[1:]) # '1234567'
 print(number[:5]) # '01234'
 print(number[-1]) # '7'
+# reverse
 print(number[::-1]) # '76543210'
 
 # string is immutability
@@ -37,7 +38,16 @@ print(quote.find('BE')) # 3
 print(quote.replace('BE', 'be'))
 
 sentence = 'himynameislouis'
+
 print(list(sentence)) #['h', 'i', 'm', 'y', 'n', 'a', 'm', 'e', 'i', 's', 'l', 'o', 'u', 'i', 's']
+
+my_list = []
+for char in sentence:
+    my_list.append(char)
+print(my_list) #['h', 'i', 'm', 'y', 'n', 'a', 'm', 'e', 'i', 's', 'l', 'o', 'u', 'i', 's']
+
+print([char for char in 'himynameislouis']) #['h', 'i', 'm', 'y', 'n', 'a', 'm', 'e', 'i', 's', 'l', 'o', 'u', 'i', 's']
+
 
 # default separator is any whitespace.
 sentence2 = 'hi my name is louis'

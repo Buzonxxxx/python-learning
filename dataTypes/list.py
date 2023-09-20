@@ -11,17 +11,18 @@ new_cart[0] = 'gum'
 print(new_cart) # ['gum', 'sunglasses', 'toys', 'grapes']
 print(cart) # ['notebooks', 'sunglasses', 'toys', 'grapes']
 
-basket = [1,2,3,4,5]
 # adding
+basket = [1,2,3,4,5]
 basket.append(6)
 print(basket) # [1, 2, 3, 4, 5, 6]
 
 basket.insert(4, 100)
 print(basket) # [1, 2, 3, 4, 100, 5, 6]
 
-basket.extend([7, 8])
-print(basket) # [1, 2, 3, 4, 100, 5, 6, 7, 8]
+basket.extend([7, 8, 9, 10])
+print(basket) # [1, 2, 3, 4, 100, 5, 6, 7, 8, 9, 10]
 
+# sum
 print(sum(basket)) # 136
 
 # removing
@@ -47,6 +48,7 @@ print(basket2.index('d', 0, 4)) # 3
 
 print('a' in basket2) # True
 
+# count
 print(basket2.count('d')) # 1
 
 # sort() 會改變原本list
