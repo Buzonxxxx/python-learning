@@ -18,7 +18,7 @@ say_hello()
     # 'hello'.capitalize()
 
 # *agrs **kwargs
-# Rule: params, *args, defaul parameters, **kyargs
+# Rule: params, *args, defaul parameters, **kwargs
 def super_func(name, *args, i='hi', **kwargs):
     total = 0
     for items in kwargs.values():
