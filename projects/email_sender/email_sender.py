@@ -1,6 +1,6 @@
 # Need to use Gmail app password: 
 # Turn on 2-step verification
-# Generate app passord here: https://myaccount.google.com/apppasswords)
+# Generate app passord here: https://myaccount.google.com/apppasswords
 
 import smtplib
 from email.message import EmailMessage
