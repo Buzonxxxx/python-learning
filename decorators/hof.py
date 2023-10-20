@@ -1,4 +1,5 @@
-# Higher Order Function: A Function accept a fucntion as a parameter or return a fucntion
+# Higher Order Function: 
+#A Function accept a fucntion as a parameter or return a fucntion
 
 def great(func):
     func()
