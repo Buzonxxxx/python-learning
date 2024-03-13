@@ -1,12 +1,3 @@
-# parameters
-# default parameter
-def say_hello(name='Darth Vader', emoji=':('):
-    print(f'hello {name}, {emoji}')
-
-# arguments
-say_hello('Louis', ':)')
-say_hello()
-
 # Functions
     # list()
     # print()
@@ -17,9 +8,19 @@ say_hello()
 # Methods
     # 'hello'.capitalize()
 
-# *agrs **kwargs
-# Rule: params, *args, defaul parameters, **kwargs
 def super_func(name, *args, i='hi', **kwargs):
+    """
+    這個函數計算傳入的參數的總和。
+
+    參數：
+    name (str)：名字
+    *args:位置參數
+    i (str, optional)：預設值為 'hi' 的參數
+    **kwargs:關鍵字參數
+
+    返回值：
+    int:傳入參數的總和
+    """
     total = 0
     for items in kwargs.values():
         total += items
@@ -35,7 +36,7 @@ def highest_even(li):
     return max(evens)
 print(highest_even([10,2,3,4,8,11])) # 10
 
-# walrus operator
+# walrus operator 這個運算子的符號是「:=」，它可以同時執行賦值和比較操作
 a = 'helloooooooooo'
 # n = len(a)
 if (n := len(a)) > 10:
