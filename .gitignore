@@ -1,3 +1,6 @@
 .DS_Store
+__pycache__
 pw
 venv
+.pytest_cache
+.idea
