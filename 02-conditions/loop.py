@@ -1,6 +1,6 @@
 # for
 for item in "Zero to Mastery":
-    print(item)
+    print(item) # Z e r o   t o   M a s t e r y
 
 # iterable: list, dictionary, tuple, set, string
 # iterate dictionary
@@ -11,51 +11,41 @@ user = {
 }
 
 for item in user:
-    print(item)
+    print(item) # name age can_swim
 
 for item in user.keys():
-    print(item)
+    print(item) # name age can_swim
 
 for item in user.values():
-    print(item)
+    print(item) # Golem 5006 False
 
 for key, value in user.items():
-    print(key, value)
+    print(f'{key}: {value}') # name: Golem age: 5006 can_swim: False
 
 
 # range()
-for _ in range(0, 10, 2): # 0 2 4 6 8
-    print(_)
+for _ in range(0, 10, 2):
+    print(_) # 0 2 4 6 8
 
-for _ in range(10, 0, -1): # 10...1
-    print(_)
+for _ in range(10, 0, -1):
+    print(_) # 10 9 8 7 6 5 4 3 2 1
 
-for _ in range(10): # 0...9
-    print(_)
+for _ in range(10):
+    print(_) # 0 1 2 3 4 5 6 7 8 9
 
 print(list(range(10))) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # enumerate: useful to get index counter
 for i, char in enumerate(list(range(100))):
     if char == 50:
-        print(f'index of 50 is {i}')
+        print(f'index of 50 is {i}') # index of 50 is 50
 
 # while loop: use it when you do not know to many times you want to loop
 my_list = [1, 2, 3]
 i = 0
 while i < len(my_list):
-    print(my_list[i])
+    print(my_list[i]) # 1 2 3
     i += 1
-
-# while True:
-#     response = input('say something: ')
-#     if response == 'bye':
-#         break
-
-# break, continue, pass
-for iten in my_list:
-    # thinking about it
-    pass
 
 
 picture = [
@@ -79,7 +69,7 @@ def show_tree():
                 print(empty, end='')
         print('') # need a new line after every row
 
-show_tree()
+show_tree() 
 
 # find duplicates
 some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
