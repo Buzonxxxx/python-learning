@@ -3,6 +3,8 @@
 # list slicing
 cart = ['notebooks', 'sunglasses', 'toys', 'grapes']
 print(cart[0:2]) # ['notebooks', 'sunglasses']
+
+# from index 0 and going up to the end of the list, with a step size of 2.
 print(cart[0::2]) # ['notebooks', 'toys']
 
 # copy list
@@ -54,17 +56,17 @@ print(basket2.count('d')) # 1
 # sort() 會改變原本list
 basket3 = ['a','b','c','d','e','d']
 basket3.sort()
-print(basket3)
+print(basket3) # ['a', 'b', 'c', 'd', 'd', 'e']
 
 # sorted() 不會改變原本list
 basket4 = ['a','b','c','d','e','d']
-print(sorted(basket4))
-print(basket4)
+print(sorted(basket4)) # ['a', 'b', 'c', 'd', 'd', 'e']
+print(f'basket4: {basket4}') # ['a', 'b', 'c', 'd', 'e', 'd']
 
 basket5 = ['a','b','c'] 
 basket5.reverse()
 print(basket5) # ['c', 'b', 'a']
-print(basket5[::-1]) # ['a', 'b', 'c']
+print(basket5[::-1]) # ['a', 'b', 'c'] 轉回來
 print(basket5) # ['c', 'b', 'a']
 
 # create list with ele from 1 to 100
@@ -75,6 +77,7 @@ large = ['nemo' for i in range(100)]
 large2 = ['nemo'] * 100
 print(large)
 print(large2)
+print(large == large2) # True
 
 # list unpacking
 a, b, c, *other, d = [1,2,3,4,5,6,7]

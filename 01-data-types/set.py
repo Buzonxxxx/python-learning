@@ -16,6 +16,7 @@ my_set.add(2)
 print(my_set)  # {1, 2, 3, 4, 5, 100}
 
 my_set.discard(100)
+print(my_set)  # {1, 2, 3, 4, 5}
 
 new = my_set.copy()
 new.clear()
@@ -25,7 +26,7 @@ print(my_set)  # {1, 2, 3, 4, 5}
 your_set = {4, 5, 6, 7, 8, 9, 10}
 
 print(my_set.difference(your_set))  # {1, 2, 3}
-my_set.difference_update(your_set)
+my_set.difference_update(your_set) # remove the same value from my_set
 print(my_set)  # {1, 2, 3}
 my_set.add(4)
 my_set.add(5)
@@ -47,7 +48,7 @@ print(your_set2.issuperset(my_set2))  # True
 
 # Exercise
 """
-#using what you learned about sets, create a piece of code that the school principal 
+# using what you learned about sets, create a piece of code that the school principal 
 can use to immediately find out who missed class so they can call the parents. 
 (Imagine if the list had 1000s of students. The principal can use the lists generated 
 by the teachers + the school database to use python and make his/her job easier): 
