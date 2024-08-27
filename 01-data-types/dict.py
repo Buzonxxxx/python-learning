@@ -14,10 +14,11 @@ user = {
 print(user['basket']) # [1,2,3]
 print(user.get('age')) # None
 print(user.get('age', 55)) # 55
+print(user) # {'basket': [1, 2, 3], 'greet': 'hello'}
 
 # uncommon
-user2 = dict(name='Louis') # {'name': 'Louis'}
-print(user2)
+user2 = dict(name='Louis')
+print(user2) # {'name': 'Louis'}
 
 user3 = user.copy()
 print(user3) # {'basket': [1, 2, 3], 'greet': 'hello'}

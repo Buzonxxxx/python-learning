@@ -30,12 +30,12 @@ name = 'louis'
 print(len(name)) # '5'
 print(name[0:len(name)]) # 'louis'
 
-quote = 'to BE or not ot be'
-print(quote.upper())
-print(quote.lower())
-print(quote.capitalize())
+quote = 'to BE or not to be'
+print(quote.upper()) # 'TO BE OR NOT TO BE'
+print(quote.lower()) # 'to be or not to be'
+print(quote.capitalize())  # 'To be or not to be'
 print(quote.find('BE')) # 3
-print(quote.replace('BE', 'be'))
+print(quote.replace('BE', 'be')) # 'to be or not to be'
 
 sentence = 'himynameislouis'
 
@@ -60,10 +60,10 @@ print(joined_sentence) # himynameislouis
 # exercise
 # birth_year = input('what year were you born?')
 # age = 2023 - int(birth_year)
-# print(f'youe age is: {age}')
+# print(f'Your age is: {age}')
 
-# name = input('please enter your name: ')
-# pw = input('please enter your password: ')
-# pw_len = len(pw)
-# pw = '*' * pw_len
-# print(f'{name}, your password {pw} is {pw_len} letters long.')
+# name = input('Please enter your name: ')
+# password = input('Please enter your password: ')
+# password_length = len(password)
+# hidden_password = '*' * password_length
+# print(f'{name}, your password {hidden_password} is {password_length} letters long.')
