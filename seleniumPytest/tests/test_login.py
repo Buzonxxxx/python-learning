@@ -1,10 +1,10 @@
 import sys
 import os
+import pytest
+from seleniumPytest.pages.login_page import LoginPage
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-import pytest
-from seleniumPytest.pages.login_page import LoginPage
 
 def test_valid_login(driver, config):
     login_page = LoginPage(driver)
