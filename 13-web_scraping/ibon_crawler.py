@@ -46,4 +46,4 @@ def getStoreInfo(city):
         return e
 
 store_info = getStoreInfo('台北市')
-# print(json.dumps(store_info, ensure_ascii=False, indent=2))
+print(json.dumps(store_info, ensure_ascii=False, indent=2))

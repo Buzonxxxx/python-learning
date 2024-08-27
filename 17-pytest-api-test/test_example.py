@@ -1,3 +1,5 @@
+# Run 'pytest -s -v '
+
 import requests
 import pytest
 

@@ -4,7 +4,7 @@ from functools import reduce
 my_pets = ['sisi', 'bibi', 'titi', 'carla']
 def cap(item):
     return item.capitalize()
-print(list(map(cap, my_pets)))
+print(list(map(cap, my_pets))) # ['Sisi', 'Bibi', 'Titi', 'Carla']
 
 
 #2 Zip the 2 lists into a list of tuples, but sort the numbers from lowest to highest.

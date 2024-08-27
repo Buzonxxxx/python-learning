@@ -1,6 +1,6 @@
 # read entire file then move cursor to read again
 my_single_line_file = open('./files/file.txt')
-print(my_single_line_file.read())
+print(my_single_line_file.read()) 
 # move cursor to the beginning
 my_single_line_file.seek(0)
 print(my_single_line_file.read())
