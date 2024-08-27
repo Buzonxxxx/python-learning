@@ -15,9 +15,9 @@ Redefine methods
 
 # Private: undescore
 class PlayerCharacter:
-    # dunder method: don't modify it
+    # Dunder method: don't modify it
     def __init__(self, name, age):
-        self._name = name # attributes
+        self._name = name
         self._age = age
 
 # Inheritance
@@ -50,7 +50,7 @@ class Archer(User):
         print(f'attacking with arrows of {self.num_arrows}')
 
 wizard1 = Wizard('Merlin', 60, 'merlin@gmail.com')
-print(wizard1.email) #merlin@gmail.com
+print(wizard1.email) # merlin@gmail.com
 
 
 # isinstance()
@@ -60,7 +60,7 @@ print(isinstance(wizard1, User)) # True
 print(isinstance(wizard1, object)) # True
 
 # Polymorphism
-archer1 = Archer("Robn", 30)
+archer1 = Archer("Robin", 30)
 
 def player_attack(char):
     char.attack()
@@ -70,6 +70,6 @@ player_attack(wizard1) #do nothing
                        
 player_attack(archer1) #attacking with arrows of 30
 
-# introspection
-print(dir(wizard1))
+# 在Python中，introspection（內省）是指在運行時檢查對象的能力。這意味著你可以在程序運行時動態地檢查對象的類型、屬性和方法。內省使得Python成為一種非常靈活和動態的編程語言
+print(dir(wizard1)) 
 
