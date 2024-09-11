@@ -46,4 +46,6 @@ title = driver.find_element(By.CSS_SELECTOR, '.title')
 # Assert that the title text contains 'Products'
 assert 'Products' in title.text
 
+driver.quit()
+
 
