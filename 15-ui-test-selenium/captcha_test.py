@@ -8,9 +8,10 @@ from seleniumbase import SB
 #     sb.sleep(5)
 
 with SB(uc=True, test=True) as sb:
+    url = 'https://feuatbj.bkw168tunnel.net/'
     sb.uc_open_with_reconnect(url, 4)
     sb.click("#header-login")
     sb.click("#link_forget")
     sb.click(".tab-primary-box li:nth-of-type(2) a")
-    sb.uc_gui_click_captcha()
+    sb.uc_gui_handle_captcha()
     sb.sleep(5)
