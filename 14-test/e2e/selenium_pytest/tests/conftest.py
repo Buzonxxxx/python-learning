@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 
 import pytest
 from selenium import webdriver
-from seleniumPytest.utils.config_reader import get_config
+from selenium_pytest.utils.config_reader import get_config
 
 @pytest.fixture(scope="session")
 def config():
